@@ -1,0 +1,150 @@
+.container {
+      min-height: 100vh;
+        padding: 2rem 0.5rem;
+          display: flex;
+            flex-direction: column;
+              align-items: center;
+              }
+
+              .main {
+                width: 100%;
+                  max-width: 900px;
+                    padding: 1.5rem;
+                      background-color: #2a2a2a;
+                        border-radius: 8px;
+                          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                          }
+
+                          .backButton {
+                            display: inline-block;
+                              margin-bottom: 1.5rem;
+                                color: #0070f3;
+                                  text-decoration: none;
+                                    font-weight: bold;
+                                      transition: color 0.2s ease;
+                                      }
+
+                                      .backButton:hover {
+                                        color: #005bb5;
+                                        }
+
+                                        .loading, .error, .noData {
+                                          text-align: center;
+                                            font-size: 1.2rem;
+                                              padding: 2rem;
+                                                color: #aaa;
+                                                }
+
+                                                .error {
+                                                  color: #ff6347;
+                                                  }
+
+                                                  .animeHeader {
+                                                    display: flex;
+                                                      flex-direction: column;
+                                                        align-items: center;
+                                                          margin-bottom: 2rem;
+                                                            text-align: center;
+                                                            }
+
+                                                            .animeImage {
+                                                              width: 200px;
+                                                                height: 300px;
+                                                                  object-fit: cover;
+                                                                    border-radius: 8px;
+                                                                      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+                                                                        margin-bottom: 1.5rem;
+                                                                        }
+
+                                                                        .animeInfo {
+                                                                          width: 100%;
+                                                                          }
+
+                                                                          .animeTitle {
+                                                                            font-size: 2.5rem;
+                                                                              margin-bottom: 1rem;
+                                                                                color: #e0e0e0;
+                                                                                }
+
+                                                                                .animeDescription {
+                                                                                  font-size: 1rem;
+                                                                                    line-height: 1.6;
+                                                                                      color: #ccc;
+                                                                                        margin-bottom: 1.5rem;
+                                                                                          text-align: left;
+                                                                                          }
+
+                                                                                          .animeGenres {
+                                                                                            font-size: 0.9rem;
+                                                                                              color: #aaa;
+                                                                                                margin-bottom: 2rem;
+                                                                                                  text-align: left;
+                                                                                                  }
+
+                                                                                                  .episodesTitle {
+                                                                                                    font-size: 2rem;
+                                                                                                      margin-bottom: 1.5rem;
+                                                                                                        border-bottom: 2px solid #333;
+                                                                                                          padding-bottom: 0.5rem;
+                                                                                                            color: #e0e0e0;
+                                                                                                            }
+
+                                                                                                            .episodeList {
+                                                                                                              list-style: none;
+                                                                                                                padding: 0;
+                                                                                                                  display: grid;
+                                                                                                                    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                                                                                                                      gap: 10px;
+                                                                                                                      }
+
+                                                                                                                      .episodeItem {
+                                                                                                                        background-color: #3a3a3a;
+                                                                                                                          border-radius: 5px;
+                                                                                                                            overflow: hidden;
+                                                                                                                              transition: background-color 0.2s ease;
+                                                                                                                              }
+
+                                                                                                                              .episodeItem:hover {
+                                                                                                                                background-color: #4a4a4a;
+                                                                                                                                }
+
+                                                                                                                                .episodeLink {
+                                                                                                                                  display: block;
+                                                                                                                                    padding: 0.8rem 1rem;
+                                                                                                                                      color: #e0e0e0;
+                                                                                                                                        text-decoration: none;
+                                                                                                                                          font-size: 1.1rem;
+                                                                                                                                            white-space: nowrap;
+                                                                                                                                              overflow: hidden;
+                                                                                                                                                text-overflow: ellipsis;
+                                                                                                                                                }
+
+                                                                                                                                                .footer {
+                                                                                                                                                  width: 100%;
+                                                                                                                                                    height: 60px;
+                                                                                                                                                      border-top: 1px solid #333;
+                                                                                                                                                        display: flex;
+                                                                                                                                                          justify-content: center;
+                                                                                                                                                            align-items: center;
+                                                                                                                                                              margin-top: 2rem;
+                                                                                                                                                                color: #aaa;
+                                                                                                                                                                }
+
+                                                                                                                                                                .footer a {
+                                                                                                                                                                  color: #0070f3;
+                                                                                                                                                                  }
+
+                                                                                                                                                                  @media (min-width: 768px) {
+                                                                                                                                                                    .animeHeader {
+                                                                                                                                                                        flex-direction: row;
+                                                                                                                                                                            text-align: left;
+                                                                                                                                                                                align-items: flex-start;
+                                                                                                                                                                                  }
+
+                                                                                                                                                                                    .animeImage {
+                                                                                                                                                                                        margin-right: 2rem;
+                                                                                                                                                                                            margin-bottom: 0;
+                                                                                                                                                                                              }
+                                                                                                                                                                                              }
+                                                                                                                                                                                              
+}
